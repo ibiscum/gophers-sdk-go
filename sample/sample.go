@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"os"
 
-	gopherssdk "github.com/scraly/gophers-sdk-go"
+	gopherssdk "github.com/ibiscum/gophers-sdk-go"
 )
 
 func main() {

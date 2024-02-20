@@ -1,5 +1,6 @@
 name: gopherssdkgo
-on: [repository_dispatch]
+on: 
+    repository_dispatch:
 jobs:
   generator:
     runs-on: macos-latest
