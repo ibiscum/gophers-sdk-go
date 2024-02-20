@@ -2,6 +2,7 @@
 [![build](https://github.com/ibiscum/gophers-sdk-go/actions/workflows/build.yml/badge.svg)](https://github.com/ibiscum/gophers-sdk-go/actions/workflows/build.yml)
 [![lint](https://github.com/ibiscum/gophers-sdk-go/actions/workflows/lint.yml/badge.svg)](https://github.com/ibiscum/gophers-sdk-go/actions/workflows/lint.yml)
 [![test](https://github.com/ibiscum/gophers-sdk-go/actions/workflows/test.yml/badge.svg)](https://github.com/ibiscum/gophers-sdk-go/actions/workflows/test.yml)
+[![CodeQL](https://github.com/ibiscum/gophers-sdk-go/actions/workflows/codeql.yml/badge.svg)](https://github.com/ibiscum/gophers-sdk-go/actions/workflows/codeql.yml)
 
 HTTP server that handle cute Gophers.
 
