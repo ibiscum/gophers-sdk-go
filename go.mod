@@ -1,4 +1,4 @@
-module github.com/scraly/gophers-sdk-go
+module github.com/ibiscum/gophers-sdk-go
 
 go 1.20
 

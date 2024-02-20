@@ -343,7 +343,7 @@ func (c *APIClient) prepareRequest(
 
 	if strings.HasPrefix(headerParams["Content-Type"], "application/x-www-form-urlencoded") && len(formParams) > 0 {
 		if body != nil {
-			return nil, errors.New("Cannot specify postBody and x-www-form-urlencoded form at the same time.")
+			return nil, errors.New("cannot specify postBody and x-www-form-urlencoded form at the same time")
 		}
 		body = &bytes.Buffer{}
 		body.WriteString(formParams.Encode())
@@ -426,18 +426,18 @@ func (c *APIClient) decode(v interface{}, b []byte, contentType string) (err err
 		*s = string(b)
 		return nil
 	}
-	if f, ok := v.(*os.File); ok {
-		f, err = os.CreateTemp("", "HttpClientFile")
-		if err != nil {
-			return
-		}
-		_, err = f.Write(b)
-		if err != nil {
-			return
-		}
-		_, err = f.Seek(0, io.SeekStart)
-		return
-	}
+	// if f, ok := v.(*os.File); ok {
+	// 	f, err = os.CreateTemp("", "HttpClientFile")
+	// 	if err != nil {
+	// 		return
+	// 	}
+	// 	_, err = f.Write(b)
+	// 	if err != nil {
+	// 		return
+	// 	}
+	// 	_, err = f.Seek(0, io.SeekStart)
+	// 	return
+	// }
 	if f, ok := v.(**os.File); ok {
 		*f, err = os.CreateTemp("", "HttpClientFile")
 		if err != nil {
@@ -463,7 +463,7 @@ func (c *APIClient) decode(v interface{}, b []byte, contentType string) (err err
 					return err
 				}
 			} else {
-				return errors.New("Unknown type with GetActualInstance but no unmarshalObj.UnmarshalJSON defined")
+				return errors.New("unknown type with GetActualInstance but no unmarshalObj.UnmarshalJSON defined")
 			}
 		} else if err = json.Unmarshal(b, v); err != nil { // simple model
 			return err
@@ -532,7 +532,7 @@ func setBody(body interface{}, contentType string) (bodyBuf *bytes.Buffer, err e
 	}
 
 	if bodyBuf.Len() == 0 {
-		err = fmt.Errorf("invalid body type %s\n", contentType)
+		err = fmt.Errorf("invalid body type %s", contentType)
 		return nil, err
 	}
 	return bodyBuf, nil
