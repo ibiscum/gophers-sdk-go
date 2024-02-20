@@ -24,6 +24,6 @@ jobs:
           draft: false
           name: ${{ github.ref_name }}
         env:
-          GITHUB_REPOSITORY: scraly/gophers-sdk-go
+          GITHUB_REPOSITORY: ibiscum/gophers-sdk-go
       - name: Force quicker pkg.go.dev indexing
-        run: curl 'https://proxy.golang.org/github.com/scraly/gophers-sdk-go/@v/${{ github.ref_name }}.info'
+        run: curl 'https://proxy.golang.org/github.com/ibiscum/gophers-sdk-go/@v/${{ github.ref_name }}.info'

@@ -30,7 +30,7 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "github.com/scraly/gophers-sdk-go"
+    openapiclient "github.com/ibiscum/gophers-sdk-go"
 )
 
 func main() {
@@ -91,7 +91,7 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "github.com/scraly/gophers-sdk-go"
+    openapiclient "github.com/ibiscum/gophers-sdk-go"
 )
 
 func main() {
@@ -155,7 +155,7 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "github.com/scraly/gophers-sdk-go"
+    openapiclient "github.com/ibiscum/gophers-sdk-go"
 )
 
 func main() {
@@ -219,7 +219,7 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "github.com/scraly/gophers-sdk-go"
+    openapiclient "github.com/ibiscum/gophers-sdk-go"
 )
 
 func main() {
@@ -285,7 +285,7 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "github.com/scraly/gophers-sdk-go"
+    openapiclient "github.com/ibiscum/gophers-sdk-go"
 )
 
 func main() {
@@ -351,7 +351,7 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "github.com/scraly/gophers-sdk-go"
+    openapiclient "github.com/ibiscum/gophers-sdk-go"
 )
 
 func main() {

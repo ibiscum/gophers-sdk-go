@@ -25,7 +25,7 @@ func Test_gopherssdkgo_GophersApiService(t *testing.T) {
 
 	t.Run("Test GophersApiService CheckHealth", func(t *testing.T) {
 
-		t.Skip("skip test") // remove to run test
+		//t.Skip("skip test") // remove to run test
 
 		resp, httpRes, err := apiClient.GophersApi.CheckHealth(context.Background()).Execute()
 
@@ -48,7 +48,7 @@ func Test_gopherssdkgo_GophersApiService(t *testing.T) {
 
 	t.Run("Test GophersApiService GopherGet", func(t *testing.T) {
 
-		t.Skip("skip test") // remove to run test
+		//t.Skip("skip test") // remove to run test
 
 		resp, httpRes, err := apiClient.GophersApi.GopherGet(context.Background()).Execute()
 

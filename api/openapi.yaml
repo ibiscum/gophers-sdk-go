@@ -144,7 +144,7 @@ components:
       example:
         displayname: My Gopher
         name: my-gopher
-        url: https://raw.githubusercontent.com/scraly/gophers/main/arrow-gopher.png
+        url: https://raw.githubusercontent.com/ibiscum/gophers/main/arrow-gopher.png
       properties:
         name:
           example: my-gopher
@@ -153,7 +153,7 @@ components:
           example: My Gopher
           type: string
         url:
-          example: https://raw.githubusercontent.com/scraly/gophers/main/arrow-gopher.png
+          example: https://raw.githubusercontent.com/ibiscum/gophers/main/arrow-gopher.png
           type: string
       type: object
     _gopher_put_request:
